@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirect to CloudStream Repo</title>
+</head>
+<body>
+  <h2>جارٍ إعادة التوجيه إلى CloudStream Repo cs-ar </h2>
+  <script>
+
+    const url = "https://raw.githubusercontent.com/mo7AmMeD64/cs-ar/main/repo/repo.json";
+    
+    window.location.href = url;
+    setTimeout(() => {
+      document.body.innerHTML = `
+        <p>إذا لم يحدث التوجيه تلقائياً، اضغط الرابط التالي:</p>
+        <a href="${url}">${url}</a>
+      `;
+    }, 2000);
+  </script>
+</body>
+</html>
